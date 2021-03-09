@@ -91,8 +91,7 @@ Ejemplo de response:
 "data": {
 "id": 23,
  "email": "w3@g.com",
- "first_name": "wilder",
- "last_name": "rumbos",
+ "full_name": "wilder",
  "created_on": "2021-03-07T04:00:00.000Z",
  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InczQGcuY29tIiwidXNlcl9pZCI6MjMsImZpcnN0X25hbWUiOiJ3aWxkZXIiLCJsYXN0X25hbWUiOiJydW1ib3MiLCJpYXQiOjE2MTUxNDkzNDEsImV4cCI6MTYxNTQwODU0MX0._lDYjN8uEVtndzALiL37zy_Kd7lufeLd0BooOWzb_Gk"
 }
@@ -113,8 +112,7 @@ Ejemplo de response:
 "data": {
 "id": 23,
  "email": "w3@g.com",
- "first_name": "wilder",
- "last_name": "rumbos",
+ "full_name": "wilder",
  "created_on": "2021-03-07T04:00:00.000Z",
  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InczQGcuY29tIiwidXNlcl9pZCI6MjMsImZpcnN0X25hbWUiOiJ3aWxkZXIiLCJsYXN0X25hbWUiOiJydW1ib3MiLCJpYXQiOjE2MTUxNDkzNDEsImV4cCI6MTYxNTQwODU0MX0._lDYjN8uEVtndzALiL37zy_Kd7lufeLd0BooOWzb_Gk"
 }
@@ -122,7 +120,7 @@ Ejemplo de response:
 ``` 
 * delete
 ```
-Tipo: delete
+Tipo: Delete
 Url: /api/users/delete
 Ejemplo request body:
 {
@@ -130,5 +128,19 @@ Ejemplo request body:
 }
 Ejemplo de response:
 "success"
+```
+* getall
+```
+Tipo: Get
+Url: /api/users/getall
+Ejemplo de response:
+{
+"id": 22,
+"full_name": "wilder"
+},
+{
+"id": 23,
+"full_name": "wcode"
+},
 ```
 
